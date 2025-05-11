@@ -1,4 +1,4 @@
-//complete this code
+//complete this co
 class Rectangle {
   constructor(width, height){
     this._width = width;
@@ -13,7 +13,7 @@ class Rectangle {
   }
   
   getArea(){
-    console.log(this.width * this.height);
+    return this.width * this.height
   }
 }
 
@@ -23,7 +23,7 @@ class Square extends Rectangle {
   }
   
   getPerimeter(){
-    console.log(4 * this.width);
+   return 4 * this.width;
   }
   
 }
@@ -31,13 +31,13 @@ class Square extends Rectangle {
 let rectangle = new Rectangle(5,10);
 console.log(rectangle.width);
 console.log(rectangle.height);
-rectangle.getArea();
+console.log(rectangle.getArea());
 
 let square = new Square(7);
 console.log(square.width);
 console.log(square.height);
-square.getArea();
-square.getPerimeter();
+console.log(square.getArea());
+console.log(square.getPerimeter());
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
